@@ -1,4 +1,6 @@
-// Given an array of positive integers, return the number of elements that are strictly greater than the average of all previous elements. Skip the first element.
+//Given an array of positive integers,
+//return the number of elements that are strictly greater than the average of all previous elements. 
+//Skip the first element.
 console.log(avgCount([100, 200, 350, 134, 453, 455, 100]))
 
 function avgCount(arr){
@@ -9,7 +11,7 @@ function avgCount(arr){
         avg = sum / i;
         if (avg < arr[i]) count++;
         sum += arr[i]
-        console.log(sum)
+        //console.log(sum)
     }
     return (count)
 }
